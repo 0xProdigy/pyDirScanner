@@ -1,0 +1,67 @@
+python pyDirScanner.py http://testphp.vulnweb.com/ 
+[i] Iniciando rastreo desde: http://testphp.vulnweb.com/
+[+] /   --> 200 OK
+[!] /privacy.php   --> 404 Not Found
+[+] /AJAX/index.php   --> 200 OK
+[+] /disclaimer.php   --> 200 OK
+[+] /userinfo.php   --> 200 OK
+[+] /Mod_Rewrite_Shop   --> 200 OK
+[+] /guestbook.php   --> 200 OK
+[+] /index.php   --> 200 OK
+[+] /categories.php   --> 200 OK
+[+] /cart.php   --> 200 OK
+[+] /search.php   --> 200 OK
+[+] /login.php   --> 200 OK
+[+] /hpp   --> 200 OK
+[+] /artists.php   --> 200 OK
+[+] /AJAX/showxml.php   --> 200 OK
+[+] /AJAX/titles.php   --> 200 OK
+[+] /showimage.php   --> 200 OK
+[+] /signup.php   --> 200 OK
+[+] /listproducts.php   --> 200 OK
+[!] /comment.php   --> 404 Not Found
+[+] /secured/newuser.php   --> 200 OK
+
+[⚠] Se encontraron referencias a dominios externos:
+    - blog.mindedsecurity.com
+    - www.acunetix.com
+    - www.eclectasy.com
+
+[!] Entradas sospechosas / no seguidas (revisar manualmente):
+    - Origen: /  |  Valor: mailto:wvs@acunetix.com  |  Motivo: non-http-scheme
+    - Origen: /AJAX/index.php  |  Valor: items  |  Motivo: not-url-like
+    - Origen: /AJAX/index.php  |  Valor: item  |  Motivo: not-url-like
+    - Origen: /AJAX/index.php  |  Valor: contentDiv  |  Motivo: not-url-like
+    - Origen: /AJAX/index.php  |  Valor: infoDiv  |  Motivo: not-url-like
+    - Origen: /AJAX/index.php  |  Valor: iteminfo  |  Motivo: not-url-like
+    - Origen: /AJAX/index.php  |  Valor: name  |  Motivo: not-url-like
+    - Origen: /AJAX/index.php  |  Valor: picture  |  Motivo: not-url-like
+    - Origen: /AJAX/index.php  |  Valor: description  |  Motivo: not-url-like
+    - Origen: /AJAX/index.php  |  Valor: infoDiv  |  Motivo: not-url-like
+    - Origen: /AJAX/index.php  |  Valor: xmlDiv  |  Motivo: not-url-like
+    - Origen: /AJAX/index.php  |  Valor: text/xml  |  Motivo: not-url-like
+    - Origen: /AJAX/index.php  |  Valor: Msxml2.XMLHTTP  |  Motivo: not-url-like
+    - Origen: /AJAX/index.php  |  Valor: A cookie was set by JavaScript.  |  Motivo: not-url-like
+    - Origen: /AJAX/index.php  |  Valor: javascript:loadSomething('artists.php');  |  Motivo: non-http-scheme
+    - Origen: /AJAX/index.php  |  Valor: javascript:loadSomething('categories.php');  |  Motivo: non-http-scheme
+    - Origen: /AJAX/index.php  |  Valor: sendXML()  |  Motivo: not-url-like
+    - Origen: /AJAX/index.php  |  Valor: SetMyCookie()  |  Motivo: not-url-like
+    - Origen: /disclaimer.php  |  Valor: mailto:wvs@acunetix.com  |  Motivo: non-http-scheme
+    - Origen: /userinfo.php  |  Valor: mailto:wvs@acunetix.com  |  Motivo: non-http-scheme
+    - Origen: /Mod_Rewrite_Shop  |  Valor: Details/network-attached-storage-dlink/1/  |  Motivo: not-url-like
+    - Origen: /Mod_Rewrite_Shop  |  Valor: Details/network-attached-storage-dlink/1/  |  Motivo: not-url-like
+    - Origen: /Mod_Rewrite_Shop  |  Valor: Details/web-camera-a4tech/2/  |  Motivo: not-url-like
+    - Origen: /Mod_Rewrite_Shop  |  Valor: Details/web-camera-a4tech/2/  |  Motivo: not-url-like
+    - Origen: /Mod_Rewrite_Shop  |  Valor: Details/color-printer/3/  |  Motivo: not-url-like
+    - Origen: /Mod_Rewrite_Shop  |  Valor: Details/color-printer/3/  |  Motivo: not-url-like
+    - Origen: /guestbook.php  |  Valor: mailto:wvs@acunetix.com  |  Motivo: non-http-scheme
+    - Origen: /index.php  |  Valor: mailto:wvs@acunetix.com  |  Motivo: non-http-scheme
+    - Origen: /categories.php  |  Valor: mailto:wvs@acunetix.com  |  Motivo: non-http-scheme
+    - Origen: /cart.php  |  Valor: mailto:wvs@acunetix.com  |  Motivo: non-http-scheme
+    - Origen: /search.php  |  Valor: mailto:wvs@acunetix.com  |  Motivo: non-http-scheme
+    - Origen: /login.php  |  Valor: mailto:wvs@acunetix.com  |  Motivo: non-http-scheme
+    - Origen: /hpp  |  Valor: ?pp=12  |  Motivo: not-url-like
+    - Origen: /artists.php  |  Valor: mailto:wvs@acunetix.com  |  Motivo: non-http-scheme
+    - Origen: /signup.php  |  Valor: mailto:wvs@acunetix.com  |  Motivo: non-http-scheme
+    - Origen: /listproducts.php  |  Valor: mailto:wvs@acunetix.com  |  Motivo: non-http-scheme
+[i] Estas entradas no se siguieron automáticamente; revisalas manualmente para análisis profundo.
